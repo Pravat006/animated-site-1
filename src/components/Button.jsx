@@ -13,10 +13,16 @@ function Button({
         <button
             id={id}
             className={`group relative z-10 w-fit cursor-pointer overflow-hidden rounded-full bg-violet-50 px-7 py-3 text-black ${containerClassName}`}
-            leftIcon={leftIcon}
-            rightIcon={rightIcon}
 
-        >{title}</button>
+
+        >
+            {leftIcon}
+            <span className='relative inline-lex overflow-hidden font-general text-xs uppercase'
+            >
+                <div>{title}</div>
+            </span>
+            {rightIcon}
+        </button>
     )
 }
 
